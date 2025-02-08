@@ -44,19 +44,7 @@ Open the App
 
 Open your browser and navigate to http://localhost:3000.
 
-Project Structure
-/todo-next-app
-├── /components        # React components
-├── /pages             # Next.js pages
-│   ├── api
-│   │   └── todos.js   # API routes for CRUD operations
-│   └── index.js       # Main page
-├── /public            # Public assets
-├── /styles            # Tailwind CSS styles
-├── /lib               # MongoDB connection
-├── .env.local         # Environment variables
-├── package.json       # Project dependencies
-└── tailwind.config.js # Tailwind CSS configuration
+ 
 Usage
 Adding a New Task
 To add a new task, enter the task description in the input field and click the "Add" button. The new task will be added to the list and stored in the MongoDB database.
