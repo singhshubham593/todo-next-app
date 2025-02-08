@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+ To-Do Next.jsApp
+Overview
+This project is a to-do list application built with Next.js, MongoDB, and Tailwind CSS. It allows users to perform CRUD operations (Create, Read, Update, Delete) on tasks, providing functionality to add, delete, and update tasks (mark as complete or pending).
 
-## Getting Started
+Tech Stack
+Next.js: A React framework to develop full-stack web applications.
 
-First, run the development server:
+MongoDB: A NoSQL database to store the to-do list data.
 
-```bash
+Tailwind CSS: A utility-first CSS framework for styling the application.
+
+Features
+Add new tasks to the to-do list.
+
+Delete tasks from the to-do list.
+
+Update tasks to mark them as complete or pending.
+
+View all tasks in the to-do list.
+
+Installation
+Clone the Repository
+
+bash
+git clone https://github.com/singhshubham593/todo-next-app.git
+cd todo-next-app
+Install Dependencies
+
+bash
+npm install
+Setup MongoDB
+
+Create a MongoDB database.
+
+Create a .env.local file in the root directory and add your MongoDB connection string:
+
+env
+MONGODB_URI=your-mongodb-connection-string
+Run the Application
+
+bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open the App
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and navigate to http://localhost:3000.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Project Structure
+/todo-next-app
+├── /components        # React components
+├── /pages             # Next.js pages
+│   ├── api
+│   │   └── todos.js   # API routes for CRUD operations
+│   └── index.js       # Main page
+├── /public            # Public assets
+├── /styles            # Tailwind CSS styles
+├── /lib               # MongoDB connection
+├── .env.local         # Environment variables
+├── package.json       # Project dependencies
+└── tailwind.config.js # Tailwind CSS configuration
+Usage
+Adding a New Task
+To add a new task, enter the task description in the input field and click the "Add" button. The new task will be added to the list and stored in the MongoDB database.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Deleting a Task
+To delete a task, click the "Delete" button next to the task you want to remove. The task will be deleted from the list and the database.
 
-## Learn More
+Updating a Task
+To mark a task as complete or pending, click the "Update" button next to the task. The task status will be updated accordingly in the list and the database.
 
-To learn more about Next.js, take a look at the following resources:
+Contributing
+Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+License
+This project is licensed under the MIT License.
